@@ -72,10 +72,6 @@ stages:
             provider: 'azurerm'
             command: 'apply'
             environmentServiceNameAzureRM: 'azure'
-  - stage: destroy
-    jobs:
-      - job:
-        steps:
         - task: TerraformTaskV4@4
           displayName: destroy
           inputs:
