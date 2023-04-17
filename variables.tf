@@ -1,7 +1,7 @@
 variable "resourcegroup_name" {
   type        = string
   description = "The name of the resource group"
-  default     = "luotech-test"
+  default     = "luotech"
 }
 
 variable "location" {
@@ -15,14 +15,14 @@ variable "tags" {
   description = "Tags used for the deployment"
   default = {
     "Environment" = "Lab"
-    "Owner"       = "luotech-test"
+    "Owner"       = "luotech"
   }
 }
 
 variable "vnet_name" {
   type        = string
   description = "The name of the vnet"
-  default     = "luotech-test"
+  default     = "luotech"
 }
 
 variable "vnet_address_space" {
