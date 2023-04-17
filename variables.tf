@@ -1,31 +1,9 @@
-variable "bkstrgrg" {
-  type        = string
-  description = "The name of the backend storage account resource group"
-  default     = "<storage act resource group name>"
-}
 
-variable "bkstrg" {
-  type        = string
-  description = "The name of the backend storage account"
-  default     = "<storage account name>"
-}
-
-variable "bkcontainer" {
-  type = string
-  description = "The container name for the backend config"
-  default = "<blob storage container name>"
-}
-
-variable "bkstrgkey" {
-  type = string
-  description = "The access key for the storage account"
-  default = "<storage account key>"
-}
 
 variable "resourcegroup_name" {
   type        = string
   description = "The name of the resource group"
-  default     = "<resource group name>"
+  default     = "luotech-test"
 }
 
 variable "location" {
@@ -39,14 +17,14 @@ variable "tags" {
   description = "Tags used for the deployment"
   default = {
     "Environment" = "Lab"
-    "Owner"       = "<name>"
+    "Owner"       = "luotech-test"
   }
 }
 
 variable "vnet_name" {
   type        = string
   description = "The name of the vnet"
-  default     = "<vnet name>"
+  default     = "luotech-test"
 }
 
 variable "vnet_address_space" {
@@ -70,16 +48,5 @@ variable "subnets" {
       name             = "subnet_3"
       address_prefixes = ["10.13.3.0/24"]
     }
-    # The name must be AzureBastionSubnet
-    bastion_subnet = {
-      name             = "AzureBastionSubnet"
-      address_prefixes = ["10.13.250.0/24"]
-    }
   }
-}
-
-variable "bastionhost_name" {
-  type        = string
-  description = "The name of the basion host"
-  default     = "<bastion host name>"
 }
