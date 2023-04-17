@@ -1,15 +1,15 @@
 # Deployment Config
 
-resourcegroup_name = "<ResourceGroup>"
+resourcegroup_name = "luotech-test"
 
-location = "<location>"
+location = "East Asia"
 
 tags = {
   "Environment" = "Lab"
-  "Owner"       = "<Owner>"
+  "Owner"       = "luotech-test"
 }
 
-vnet_name = "<VNet Name>"
+vnet_name = "luotech-test"
 
 vnet_address_space = ["10.211.0.0/16"]
 
