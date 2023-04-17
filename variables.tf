@@ -31,7 +31,7 @@ variable "resourcegroup_name" {
 variable "location" {
   type        = string
   description = "The region for the deployment"
-  default     = "<region>"
+  default     = "East Asia"
 }
 
 variable "tags" {
